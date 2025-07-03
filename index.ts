@@ -17,10 +17,21 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:8000',
+    origin: 'http://localhost:5173',
     credentials: true
   },
 });
+// Example for allowing localhost:5173 in development and all in production
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://your-frontend-domain.vercel.app'
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true, // If using cookies or Authorization headers
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+}));
 
 app.use(cors());
 app.use(express.json());
