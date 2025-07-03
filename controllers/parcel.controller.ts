@@ -3,7 +3,9 @@ import Parcel from '../models/Parcel';
 
 export const createParcel = async (req: Request, res: Response) => {
   try {
+    console.log("parcel created", req.body)
     const parcel = new Parcel({ ...req.body, customerId: (req as any).user.id });
+console.log(" new parcel", parcel)
     await parcel.save();
     res.status(201).json(parcel);
     console.log('New percel created successfully', parcel)
