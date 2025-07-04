@@ -15,7 +15,11 @@ This is the **backend** service for the Courier and Parcel Management System, bu
 - ✅ RESTful API with Postman Collection
 
 ---
-
+## 🔐 Authentication & Roles
+   Admin: Full access (CRUD users, assign agents, reports, metrics)
+   Customer: Create/view their parcels
+   Agent: View assigned parcels, update delivery status, share live location
+   
 ## 🛠️ Tech Stack
 
 - **Express.js**
