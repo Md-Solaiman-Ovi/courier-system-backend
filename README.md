@@ -7,10 +7,7 @@ This is the **backend** service for the Courier and Parcel Management System, bu
 - 🔐 JWT Authentication with Access & Refresh tokens
 - 👥 Role-based Access Control (Admin, Customer, Agent)
 - 📦 Parcel CRUD operations
-- 📍 Real-time location tracking using Socket.IO
 - 📤 Assign Agents to Parcels
-- 📊 Dashboard metrics (parcel counts, agent/customer stats)
-- 📄 Report export as PDF and CSV
 - 🌐 CORS & environment-based configuration
 - ✅ RESTful API with Postman Collection
 
