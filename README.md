@@ -16,9 +16,9 @@ This is the **backend** service for the Courier and Parcel Management System, bu
 
 ---
 ## 🔐 Authentication & Roles
-   Admin: Full access (CRUD users, assign agents, reports, metrics)
-   Customer: Create/view their parcels
-   Agent: View assigned parcels, update delivery status, share live location
+   - **Admin: Full access (CRUD users, assign agents, reports, metrics)**
+   - **Customer: Create/view their parcels**
+   - **Agent: View assigned parcels, update delivery status, share live location**
    
 ## 🛠️ Tech Stack
 
