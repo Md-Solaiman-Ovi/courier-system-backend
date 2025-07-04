@@ -32,7 +32,24 @@ This is the **backend** service for the Courier and Parcel Management System, bu
 
 ### 📦 Install dependencies
 
-```bash
-pnpm install
-# or
-npm install
+    ```bash
+    pnpm install
+    # or
+    npm install
+
+### 📦 Create .env file
+
+    ```bash
+    PORT=8000
+    MONGO_URI=your_mongodb_uri
+    JWT_SECRET=your_jwt_secret
+    REFRESH_SECRET=your_refresh_secret
+    CLIENT_ORIGIN=http://localhost:5173
+
+### 📦 Start the Server
+
+    ```bash
+    pnpm dev
+    # or
+    npm run dev
+
