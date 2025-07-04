@@ -7,7 +7,9 @@ export const createParcel = async (req: Request, res: Response) => {
     const parcel = new Parcel({ ...req.body, customerId: (req as any).user.id });
 console.log(" new parcel", parcel)
     await parcel.save();
+    console.log("parcel saved succesfully", parcel)
     res.status(201).json(parcel);
+
     console.log('New percel created successfully', parcel)
   } catch (err) {
     res.status(500).json({ message: 'Error creating parcel' });

@@ -24,14 +24,9 @@ const io = new Server(server, {
 // Example for allowing localhost:5173 in development and all in production
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://your-frontend-domain.vercel.app'
+  "https://courier-system-backend.vercel.app"
 ];
 
-app.use(cors({
-  origin: allowedOrigins,
-  credentials: true, // If using cookies or Authorization headers
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-}));
 
 app.use(cors());
 app.use(express.json());
