@@ -45,10 +45,9 @@ This is the **backend** service for the Courier and Parcel Management System, bu
 
     ```bash
     PORT=8000
-    MONGO_URI=your_mongodb_uri
-    JWT_SECRET=your_jwt_secret
-    REFRESH_SECRET=your_refresh_secret
-    CLIENT_ORIGIN=http://localhost:5173
+    MONGO_URI=mongodb+srv://msovi480:msovi480@cluster0.nxb6oce.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+    JWT_SECRET=bff32ead770bb6e9134caf8b1692f8f26bb60cf33db06b9a8d36bbd6cc743f8a82146b798f97641a66c356a70574cb1474ad42d2b48b20752751a1ca89e4bab7
+
 
 ### 📦 Start the Server
 
